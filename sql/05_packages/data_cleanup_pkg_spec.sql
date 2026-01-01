@@ -1,0 +1,4 @@
+CREATE OR REPLACE PACKAGE DATA_CLEANUP_PKG AS 
+    -- Procedure to remove duplicate employees based on Email 
+    PROCEDURE REMOVE_DUPLICATE_EMPLOYEES; 
+END DATA_CLEANUP_PKG; 

@@ -1,0 +1,4 @@
+CREATE TABLE STATUSES ( 
+    STATUS_ID NUMBER NOT NULL, 
+    STATUS_DESC VARCHAR2(30) -- e.g., 'Active', 'Terminated' 
+);

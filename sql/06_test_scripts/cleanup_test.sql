@@ -1,0 +1,24 @@
+SET SERVEROUTPUT ON; 
+ 
+BEGIN 
+    -- 1. Insert First Logical Duplicate (ID 999) 
+    INSERT INTO EMPLOYEES (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, HIRE_DATE, 
+JOB_ID, DEPARTMENT_ID, STATUS_ID) 
+    VALUES (999, 'Steven', 'King', 'SKING', SYSDATE, 'AD_PRES', 30, 1); 
+ 
+    -- 2. Insert Second Logical Duplicate (ID 998) 
+    -- We repeat the INSERT statement 
+    INSERT INTO EMPLOYEES (EMPLOYEE_ID, FIRST_NAME, LAST_NAME, EMAIL, HIRE_DATE, 
+JOB_ID, DEPARTMENT_ID, STATUS_ID) 
+    VALUES (998, 'Steven', 'King', 'SKING', SYSDATE, 'AD_PRES', 30, 1); 
+ 
+    COMMIT; 
+    DBMS_OUTPUT.PUT_LINE('Two duplicate records created for testing.'); 
+END; 
+/ 
+
+SET SERVEROUTPUT ON; 
+BEGIN 
+    DATA_CLEANUP_PKG.REMOVE_DUPLICATE_EMPLOYEES; 
+END; 
+/ 

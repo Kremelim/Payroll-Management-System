@@ -1,0 +1,5 @@
+-- Create a sequence starting at 100 
+CREATE SEQUENCE JOB_HISTORY_SEQ 
+START WITH 100 
+INCREMENT BY 1; 
+
