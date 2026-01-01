@@ -4,30 +4,31 @@
 This project is a **Payroll Management System** developed as the **COMP305 Database Management Systems Final Project**.  
 It demonstrates a fully normalized (3NF) relational database design implemented using **Oracle SQL and PL/SQL**, including advanced features such as packages, triggers, sequences, dynamic reports, and data cleanup procedures.
 
-## 📁 Project Structure
-
-sql/
- ├── 01_tables        # Database table definitions
- ├── 02_constraints   # Primary & foreign keys
- ├── 03_sequences     # Sequences
- ├── 04_triggers      # Triggers
- ├── 05_packages      # PL/SQL packages
- └── 06_test_scripts  # Test & execution scripts
-
-docs/
- └── ER_diagram.pdf   # ER Diagram
-
-## 🧩 ER Diagram
-The ER diagram of the database design is available in the `docs` folder.
-
-📄 docs/ER_diagram.pdf
-
 The system manages:
 - Employees and organizational structure
 - Payroll transactions and deductions
 - Attendance and leave management
 - Automated job history tracking
 - Dynamic reporting and data integrity
+
+## 📁 Project Structure
+
+```text
+sql/
+├── 01_tables        # Database table definitions
+├── 02_constraints   # Primary & foreign keys
+├── 03_sequences     # Sequences
+├── 04_triggers      # Triggers
+├── 05_packages      # PL/SQL packages
+└── 06_test_scripts  # Test & execution scripts
+
+docs/
+└── ER_diagram.pdf   # Entity–Relationship Diagram
+````
+## 🧩 ER Diagram
+The ER diagram of the database design is available in the `docs` folder.
+
+📄 docs/ER_diagram.pdf
 
 ---
 
